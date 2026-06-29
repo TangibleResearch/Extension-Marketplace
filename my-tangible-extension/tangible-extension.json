@@ -1,0 +1,32 @@
+{
+  "name": "my-tangible-extension",
+  "displayName": "My Tangible Extension",
+  "publisher": "TangibleResearch",
+  "description": "A basic Tangible Studio extension with starter commands and workspace messaging.",
+  "version": "0.1.0",
+  "engines": {
+    "tangibleStudio": "^0.1.0"
+  },
+  "categories": [
+    "Starter",
+    "Productivity"
+  ],
+  "permissions": [],
+  "activationEvents": [
+    "onCommand:tangible.helloWorld",
+    "onCommand:tangible.showWorkspace"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "tangible.helloWorld",
+        "title": "Hello Tangible Extension"
+      },
+      {
+        "command": "tangible.showWorkspace",
+        "title": "Show Active Workspace"
+      }
+    ]
+  },
+  "main": "./src/extension.ts"
+}
